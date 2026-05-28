@@ -1,0 +1,12 @@
+#!name=KK键盘无限变声
+#!desc=解锁KK键盘无限变声功能数据限制
+#!author=Gemini
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Keyboard.png
+#!date=2026-05-27
+
+[Script]
+http-response ^https?:\/\/kk\.weshine\.im\/v1\.0\/text2voice\/(checkCount|consumeCount|createTtsAudio) script-path=https://raw.githubusercontent.com/freefishgolden/loon/main/kk_voice.js, requires-body=true, timeout=10, tag=KK键盘变声解锁
+
+[MitM]
+# 信任域名以解密 HTTPS 流量
+hostname = kk.weshine.im
