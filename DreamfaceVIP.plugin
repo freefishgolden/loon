@@ -1,0 +1,5 @@
+[Script]
+http-response https://www.dreamfaceapp.com/df-server/user/save_user_login script-path=https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/dreamface/dreamface.js, requires-body=true
+
+[MITM]
+hostname = www.dreamfaceapp.com
