@@ -1,0 +1,10 @@
+#!name=WeTalk/PingMe 账号抓取
+#!desc=自动抓取 WeTalk/PingMe 账号数据并同步到 Worker
+#!author=@Yu9191
+
+[Script]
+http-request https://checkin-worker.lllsunnyboylll.workers.dev/sub/script.js tag=wetalk-capture, pattern=https?://api\.wetalkapp\.com/app/queryBalanceAndBonus, requires-body=false, enabled=true
+http-request https://checkin-worker.lllsunnyboylll.workers.dev/sub/script.js tag=pingme-capture, pattern=https?://api\.(pingmeapp\.net|genvoice\.cn)/app/queryBalanceAndBonus, requires-body=false, enabled=true
+
+[MITM]
+hostname = api.wetalkapp.com, api.pingmeapp.net, api.genvoice.cn
