@@ -3,8 +3,8 @@
 #!author=@Yu9191
 
 [Script]
-http-request https://checkin-worker.lllsunnyboylll.workers.dev/sub/script.js tag=wetalk-capture, pattern=https?://api\.wetalkapp\.com/app/queryBalanceAndBonus, requires-body=false, enabled=true
-http-request https://checkin-worker.lllsunnyboylll.workers.dev/sub/script.js tag=pingme-capture, pattern=https?://api\.(pingmeapp\.net|genvoice\.cn)/app/queryBalanceAndBonus, requires-body=false, enabled=true
+http-request https://checkin-worker.mmzj.workers.dev/sub/script.js tag=wetalk-capture, pattern=https?://api\.wetalkapp\.com/app/queryBalanceAndBonus, requires-body=false, enabled=true
+http-request https://checkin-worker.mmzj.workers.dev/sub/script.js tag=pingme-capture, pattern=https?://api\.(pingmeapp\.net|genvoice\.cn)/app/queryBalanceAndBonus, requires-body=false, enabled=true
 
 [MITM]
 hostname = api.wetalkapp.com, api.pingmeapp.net, api.genvoice.cn
