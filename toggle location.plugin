@@ -1,0 +1,8 @@
+[Script]
+http-response ^https?:\/\/(gs-loc-cn|gs-loc)\.apple\.com\/clls\/wloc script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/wloc_spoofer.js, requires-body=true, tag=wloc_spoofer
+
+http-response ^https:\/\/boxjs\.my\/write script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/write_data.js, requires-body=true, tag=write_data
+
+
+[MITM]
+hostname = gs-loc-cn.apple.com, gs-loc.apple.com, boxjs.my
